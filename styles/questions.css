@@ -1,0 +1,20 @@
+.alphabetlist{
+
+    counter-reset: list;
+
+
+}
+
+.alphabetlist > li{
+    list-style: none;
+    position: relative;
+
+}
+.alphabetlist >li::before{
+    counter-increment: list;
+    content: counter(list, lower-alpha) ") ";
+    position: absolute;
+    left: -1.4em;
+
+
+}
