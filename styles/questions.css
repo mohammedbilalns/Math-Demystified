@@ -1,20 +1,24 @@
 .alphabetlist{
 
-    counter-reset: list;
-
-
-}
-
-.alphabetlist > li{
     list-style: none;
-    position: relative;
+    counter-reset: sublist;
+    padding-left: 0;
+
 
 }
-.alphabetlist >li::before{
-    counter-increment: list;
-    content: counter(list, lower-alpha) ") ";
-    position: absolute;
-    left: -1.4em;
+.alphabetlist > li{
+
+    counter-increment: sublist;
+    margin-bottom: 6px;
+}
+
+
+.alphabetlist >li:before{
+
+    content: "(" counter(sublist, lower-alpha) ") ";
+  margin-right: 5px; 
+
+
 
 
 }
