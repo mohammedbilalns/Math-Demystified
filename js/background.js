@@ -47,7 +47,7 @@ window.onload = function() {
       return { symbol, fontSize, x, y, dx, dy };
     }
   
-    for (let i = 0; i < 20; i++) { // Create 50 circles, polygons, and symbols initially
+    for (let i = 0; i < 10; i++) { // Create 50 circles, polygons, and symbols initially
       circles.push(createCircle());
       polygons.push(createPolygon());
       symbols.push(createSymbol());
